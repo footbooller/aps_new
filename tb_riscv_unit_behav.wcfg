@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_riscv_unit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="alu_opcodes_pkg" />
+            <top_module name="glbl" />
+            <top_module name="riscv_pkg" />
+            <top_module name="tb_riscv_unit" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1362672500fs"></ZoomStartTime>
+      <ZoomEndTime time="1374772501fs"></ZoomEndTime>
+      <Cursor1Time time="1367752500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="210"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="51" />
+   <wvobject fp_name="/tb_riscv_unit/dut/clkgen/clkout" type="logic">
+      <obj_property name="ElementShortName">clkout</obj_property>
+      <obj_property name="ObjectShortName">clkout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/ps2_clk" type="logic">
+      <obj_property name="ElementShortName">ps2_clk</obj_property>
+      <obj_property name="ObjectShortName">ps2_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/ps2_dat" type="logic">
+      <obj_property name="ElementShortName">ps2_dat</obj_property>
+      <obj_property name="ObjectShortName">ps2_dat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ps2_ctrl/scan_code" type="array">
+      <obj_property name="ElementShortName">scan_code[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scan_code[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/instr_i" type="array">
+      <obj_property name="ElementShortName">instr_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/intctrl/int_o" type="logic">
+      <obj_property name="ElementShortName">int_o</obj_property>
+      <obj_property name="ObjectShortName">int_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/arstn_i" type="logic">
+      <obj_property name="ElementShortName">arstn_i</obj_property>
+      <obj_property name="ObjectShortName">arstn_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/data_addr_o" type="array">
+      <obj_property name="ElementShortName">data_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/data_wdata_o" type="array">
+      <obj_property name="ElementShortName">data_wdata_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_wdata_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/stall" type="logic">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/rst_n_i" type="logic">
+      <obj_property name="ElementShortName">rst_n_i</obj_property>
+      <obj_property name="ObjectShortName">rst_n_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/instr_data_o" type="array">
+      <obj_property name="ElementShortName">instr_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/instr_addr_i" type="array">
+      <obj_property name="ElementShortName">instr_addr_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_addr_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/data_rdata_o" type="array">
+      <obj_property name="ElementShortName">data_rdata_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rdata_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/data_req_i" type="logic">
+      <obj_property name="ElementShortName">data_req_i</obj_property>
+      <obj_property name="ObjectShortName">data_req_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/data_we_i" type="logic">
+      <obj_property name="ElementShortName">data_we_i</obj_property>
+      <obj_property name="ObjectShortName">data_we_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/data_be_i" type="array">
+      <obj_property name="ElementShortName">data_be_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_be_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/data_addr_i" type="array">
+      <obj_property name="ElementShortName">data_addr_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_addr_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/instr_loaddr" type="array">
+      <obj_property name="ElementShortName">instr_loaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_loaddr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/ram/data_loaddr" type="array">
+      <obj_property name="ElementShortName">data_loaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">data_loaddr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/rf_riscv/rf_mem" type="array">
+      <obj_property name="ElementShortName">rf_mem[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_mem[0:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/hex_ctrl/hex0" type="array">
+      <obj_property name="ElementShortName">hex0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hex0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/hex_ctrl/hex1" type="array">
+      <obj_property name="ElementShortName">hex1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hex1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/hex_ctrl/hex2" type="array">
+      <obj_property name="ElementShortName">hex2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hex2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/hex_ctrl/hex3" type="array">
+      <obj_property name="ElementShortName">hex3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hex3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/hex_ctrl/hex4" type="array">
+      <obj_property name="ElementShortName">hex4[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hex4[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/hex_ctrl/hex5" type="array">
+      <obj_property name="ElementShortName">hex5[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hex5[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/memory_req" type="logic">
+      <obj_property name="ElementShortName">memory_req</obj_property>
+      <obj_property name="ObjectShortName">memory_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/data_we" type="logic">
+      <obj_property name="ElementShortName">data_we</obj_property>
+      <obj_property name="ObjectShortName">data_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/data_req" type="logic">
+      <obj_property name="ElementShortName">data_req</obj_property>
+      <obj_property name="ObjectShortName">data_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/periph_ad" type="array">
+      <obj_property name="ElementShortName">periph_ad[7:0]</obj_property>
+      <obj_property name="ObjectShortName">periph_ad[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/periph_req[0]" type="logic">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/arstn_i" type="logic">
+      <obj_property name="ElementShortName">arstn_i</obj_property>
+      <obj_property name="ObjectShortName">arstn_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/lsu_addr_i" type="array">
+      <obj_property name="ElementShortName">lsu_addr_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lsu_addr_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/lsu_we_i" type="logic">
+      <obj_property name="ElementShortName">lsu_we_i</obj_property>
+      <obj_property name="ObjectShortName">lsu_we_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/lsu_size_i" type="array">
+      <obj_property name="ElementShortName">lsu_size_i[2:0]</obj_property>
+      <obj_property name="ObjectShortName">lsu_size_i[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/lsu_data_i" type="array">
+      <obj_property name="ElementShortName">lsu_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lsu_data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/lsu_req_i" type="logic">
+      <obj_property name="ElementShortName">lsu_req_i</obj_property>
+      <obj_property name="ObjectShortName">lsu_req_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/lsu_stall_req_o" type="logic">
+      <obj_property name="ElementShortName">lsu_stall_req_o</obj_property>
+      <obj_property name="ObjectShortName">lsu_stall_req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/lsu_data_o" type="array">
+      <obj_property name="ElementShortName">lsu_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lsu_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/data_rdata_i" type="array">
+      <obj_property name="ElementShortName">data_rdata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rdata_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/data_req_o" type="logic">
+      <obj_property name="ElementShortName">data_req_o</obj_property>
+      <obj_property name="ObjectShortName">data_req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/data_we_o" type="logic">
+      <obj_property name="ElementShortName">data_we_o</obj_property>
+      <obj_property name="ObjectShortName">data_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/data_be_o" type="array">
+      <obj_property name="ElementShortName">data_be_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_be_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/data_addr_o" type="array">
+      <obj_property name="ElementShortName">data_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/data_wdata_o" type="array">
+      <obj_property name="ElementShortName">data_wdata_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_wdata_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_riscv_unit/dut/core/core/lsu/stall" type="logic">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+   </wvobject>
+</wave_config>

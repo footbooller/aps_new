@@ -1,0 +1,23 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/User/Desktop/ряё/lab7/lab7.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sim_1/new/tb_riscvunit.sv,1702845797,systemVerilog,,,,tb_riscv_unit,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/CSR_riscv.sv,1703676078,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/PS2Receiver.sv,,CSR_riscv,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/PS2Receiver.sv,1702823716,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/alu_opcodes_pkg.sv,,PS2Receiver;debouncer,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/alu_opcodes_pkg.sv,1694685676,systemVerilog,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/alu_riscv.sv;C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv;C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/riscv_pkg.sv,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/alu_riscv.sv,,alu_opcodes_pkg,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/alu_riscv.sv,1701948029,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/clkgen.sv,,alu_riscv,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/clkgen.sv,1701710520,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/riscv_pkg.sv,,clkgen,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv,1702837165,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/hex_digits.sv,,decoder_riscv,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/hex_digits.sv,1702829523,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/hex_sb_ctrl.sv,,hex_digits,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/hex_sb_ctrl.sv,1702830709,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/intctrl_riscv.sv,,hex_sb_ctrl,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/intctrl_riscv.sv,1702843600,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/miriscv_lsu.sv,,intctrl_riscv,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/miriscv_lsu.sv,1701948635,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/miriscv_ram.sv,,miriscv_lsu,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/miriscv_ram.sv,1703628271,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/ps2_sb_ctrl.sv,,miriscv_ram,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/ps2_sb_ctrl.sv,1702845775,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/rf_riscv.sv,,ps2_sb_ctrl,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/rf_riscv.sv,1695844343,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/riscv_core.sv,,rf_riscv,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/riscv_core.sv,1702818027,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/riscv_newcore.sv,,riscv_core,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/riscv_newcore.sv,1702819044,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/riscv_unit.sv,,riscv_newcore,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/riscv_pkg.sv,1697039681,systemVerilog,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv,,riscv_pkg,,,,,,,,
+C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sources_1/new/riscv_unit.sv,1702841322,systemVerilog,,C:/Users/User/Desktop/ряё/lab7/lab7.srcs/sim_1/new/tb_riscvunit.sv,,riscv_unit,,,,,,,,

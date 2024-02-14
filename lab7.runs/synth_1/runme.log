@@ -1,0 +1,810 @@
+
+*** Running vivado
+    with args -log riscv_unit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_unit.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source riscv_unit.tcl -notrace
+Command: synth_design -top riscv_unit -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3740 
+WARNING: [Synth 8-6901] identifier 'mscratch' is used before its declaration [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/CSR_riscv.sv:39]
+WARNING: [Synth 8-6901] identifier 'mcause_reg' is used before its declaration [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/CSR_riscv.sv:41]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 819.516 ; gain = 240.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv_unit' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_unit.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clkgen' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/clkgen.sv:1]
+	Parameter TB_MODE bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [D:/vivado_program/Vivado/2019.2/scripts/rt/data/unisim_comp.v:40060]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 1.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 100 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (1#1) [D:/vivado_program/Vivado/2019.2/scripts/rt/data/unisim_comp.v:40060]
+INFO: [Synth 8-6155] done synthesizing module 'clkgen' (2#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/clkgen.sv:1]
+WARNING: [Synth 8-7023] instance 'clkgen' of module 'clkgen' has 3 connections declared, but only 2 given [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_unit.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'riscv_newcore' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_newcore.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'riscv_core' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_core.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'decoder_riscv' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:163]
+INFO: [Synth 8-226] default block is never used [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:447]
+WARNING: [Synth 8-87] always_comb on 'a_sel_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:33]
+WARNING: [Synth 8-87] always_comb on 'b_sel_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:34]
+WARNING: [Synth 8-87] always_comb on 'alu_op_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:35]
+WARNING: [Synth 8-87] always_comb on 'wb_sel_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:36]
+WARNING: [Synth 8-87] always_comb on 'gpr_we_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:37]
+WARNING: [Synth 8-87] always_comb on 'jal_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:38]
+WARNING: [Synth 8-87] always_comb on 'jalr_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:39]
+WARNING: [Synth 8-87] always_comb on 'branch_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:40]
+WARNING: [Synth 8-87] always_comb on 'mem_size_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:41]
+WARNING: [Synth 8-87] always_comb on 'mem_we_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:42]
+WARNING: [Synth 8-87] always_comb on 'mem_req_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:43]
+WARNING: [Synth 8-87] always_comb on 'csr_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:45]
+WARNING: [Synth 8-87] always_comb on 'int_rst_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:46]
+WARNING: [Synth 8-87] always_comb on 'csr_op_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_riscv' (3#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'rf_riscv' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/rf_riscv.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'rf_riscv' (4#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/rf_riscv.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_core.sv:127]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_core.sv:136]
+INFO: [Synth 8-6157] synthesizing module 'alu_riscv' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/alu_riscv.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'alu_riscv' (5#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/alu_riscv.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'miriscv_lsu' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_lsu.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_lsu.sv:58]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_lsu.sv:44]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_lsu.sv:90]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_lsu.sv:108]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_lsu.sv:78]
+INFO: [Synth 8-6155] done synthesizing module 'miriscv_lsu' (6#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_lsu.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'CSR_riscv' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/CSR_riscv.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/CSR_riscv.sv:36]
+INFO: [Synth 8-6155] done synthesizing module 'CSR_riscv' (7#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/CSR_riscv.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_core' (8#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_core.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'intctrl_riscv' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/intctrl_riscv.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'intctrl_riscv' (9#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/intctrl_riscv.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_newcore' (10#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_newcore.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ps2_sb_ctrl' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/ps2_sb_ctrl.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/PS2Receiver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/PS2Receiver.sv:69]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (11#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/PS2Receiver.sv:69]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (12#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/PS2Receiver.sv:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/ps2_sb_ctrl.sv:65]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_sb_ctrl' (13#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/ps2_sb_ctrl.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'hex_sb_ctrl' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/hex_sb_ctrl.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'hex_digits' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/hex_digits.sv:1]
+	Parameter pwm bound to: 1000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/hex_digits.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'hex_digits' (14#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/hex_digits.sv:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/hex_sb_ctrl.sv:50]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/hex_sb_ctrl.sv:67]
+WARNING: [Synth 8-87] always_comb on 'read_data_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/hex_sb_ctrl.sv:68]
+INFO: [Synth 8-6155] done synthesizing module 'hex_sb_ctrl' (15#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/hex_sb_ctrl.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'miriscv_ram' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_ram.sv:3]
+INFO: [Synth 8-3876] $readmem data file 'program.txt' is read successfully [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_ram.sv:23]
+WARNING: [Synth 8-87] always_comb on 'data_rdata_o_reg' did not result in combinational logic [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_ram.sv:47]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'data_ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "data_ram_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'miriscv_ram' (16#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_ram.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_unit.sv:135]
+WARNING: [Synth 8-3936] Found unconnected internal register 'periph_req_reg' and it is trimmed from '256' to '5' bits. [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_unit.sv:76]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_unit' (17#1) [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_unit.sv:3]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port rst_n_i
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[31]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[30]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[29]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[28]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[27]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[26]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[25]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[24]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[23]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[22]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[21]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[20]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[19]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[18]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[17]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[16]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[15]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[14]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[13]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[12]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[11]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[10]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[1]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port instr_addr_i[0]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[31]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[30]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[29]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[28]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[27]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[26]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[25]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[24]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[23]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[22]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[21]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[20]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[19]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[18]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[17]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[16]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[15]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[14]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[13]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[12]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[11]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[10]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[1]
+WARNING: [Synth 8-3331] design miriscv_ram has unconnected port data_addr_i[0]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[31]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[30]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[29]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[28]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[27]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[26]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[25]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[24]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[23]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[22]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[21]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[20]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[19]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[18]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[17]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[16]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[15]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[14]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[13]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[12]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[11]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[10]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[9]
+WARNING: [Synth 8-3331] design hex_sb_ctrl has unconnected port write_data_i[8]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[31]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[30]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[29]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[28]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[27]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[26]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[25]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[24]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[23]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[22]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[21]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[20]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[19]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[18]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[17]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[16]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[15]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[14]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[13]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[12]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[11]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[10]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[9]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[8]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[7]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[6]
+WARNING: [Synth 8-3331] design ps2_sb_ctrl has unconnected port write_data_i[5]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1028.711 ; gain = 449.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1030.188 ; gain = 450.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1030.188 ; gain = 450.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1030.188 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/User/Desktop/lab7/nexys_a7_100t.xdc]
+Finished Parsing XDC File [C:/Users/User/Desktop/lab7/nexys_a7_100t.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/User/Desktop/lab7/nexys_a7_100t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_unit_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_unit_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1198.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.223 . Memory (MB): peak = 1198.438 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1198.438 ; gain = 618.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1198.438 ; gain = 618.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1198.438 ; gain = 618.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/riscv_core.sv:201]
+INFO: [Synth 8-5545] ROM "hex0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex5" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex6" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex7" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bitmask" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "read_data_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'csr_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'csr_op_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:47]
+WARNING: [Synth 8-327] inferring latch for variable 'int_rst_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'a_sel_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:33]
+WARNING: [Synth 8-327] inferring latch for variable 'b_sel_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:34]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_op_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:35]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_req_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:43]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_we_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_size_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:41]
+WARNING: [Synth 8-327] inferring latch for variable 'gpr_we_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:37]
+WARNING: [Synth 8-327] inferring latch for variable 'wb_sel_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:36]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:40]
+WARNING: [Synth 8-327] inferring latch for variable 'jal_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'jalr_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/decoder_riscv.sv:39]
+WARNING: [Synth 8-327] inferring latch for variable 'read_data_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/hex_sb_ctrl.sv:68]
+WARNING: [Synth 8-327] inferring latch for variable 'data_rdata_o_reg' [C:/Users/User/Desktop/lab7/lab7.srcs/sources_1/new/miriscv_ram.sv:47]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:52 ; elapsed = 00:03:09 . Memory (MB): peak = 1198.438 ; gain = 618.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |miriscv_ram__GB0 |           1|     44602|
+|2     |miriscv_ram__GB1 |           1|     11718|
+|3     |miriscv_ram__GB2 |           1|     32874|
+|4     |miriscv_ram__GB3 |           1|       224|
+|5     |riscv_unit__GC0  |           1|      6605|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1028  
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 11    
+	                1 Bit    Registers := 7     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input   8192 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 10    
+	   4 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4103  
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 3     
+	  12 Input      2 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 33    
+	   3 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 19    
+	   9 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module riscv_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module miriscv_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1024  
++---Muxes : 
+	   2 Input   8192 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4101  
+Module decoder_riscv 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      5 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 3     
+	  12 Input      2 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 19    
+Module rf_riscv 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module alu_riscv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module miriscv_lsu 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module CSR_riscv 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 3     
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+Module riscv_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 4     
+Module intctrl_riscv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module PS2Receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module ps2_sb_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module hex_digits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module hex_sb_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  10 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[26]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[10]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[27]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[11]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[24]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[8]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[25]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[9]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[16]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[17]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[30]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[14]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[28]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[12]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[29]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[13]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[22]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[20]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[21]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[18]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[15]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[23]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/hex_ctrl/read_data_o_reg[31]' (LD) to 'i_0/hex_ctrl/read_data_o_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\hex_ctrl/read_data_o_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\core/core/decoder_riscv/jal_o_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:18 ; elapsed = 00:07:55 . Memory (MB): peak = 1265.801 ; gain = 686.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-----------------------+---------------+----------------+
+|Module Name | RTL Object            | Depth x Width | Implemented As | 
++------------+-----------------------+---------------+----------------+
+|hex_digits  | hex_ledr              | 32x7          | LUT            | 
+|miriscv_ram | p_0_out               | 256x8         | LUT            | 
+|miriscv_ram | p_0_out               | 256x8         | LUT            | 
+|miriscv_ram | p_0_out               | 256x8         | LUT            | 
+|miriscv_ram | p_0_out               | 256x8         | LUT            | 
+|riscv_unit  | p_0_out               | 256x8         | LUT            | 
+|riscv_unit  | p_0_out               | 256x8         | LUT            | 
+|riscv_unit  | p_0_out               | 256x8         | LUT            | 
+|riscv_unit  | p_0_out               | 256x8         | LUT            | 
+|riscv_unit  | hex_ctrl/hex/hex_ledr | 32x7          | LUT            | 
++------------+-----------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                    | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------------------------+-----------+----------------------+--------------+
+|riscv_unit  | core/core/rf_riscv/rf_mem_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+-------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |miriscv_ram__GB0 |           1|     13124|
+|2     |miriscv_ram__GB1 |           1|      6594|
+|3     |miriscv_ram__GB2 |           1|      8226|
+|4     |miriscv_ram__GB3 |           1|       145|
+|5     |riscv_unit__GC0  |           1|      4542|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:43 ; elapsed = 00:08:21 . Memory (MB): peak = 1265.801 ; gain = 686.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_0/core/core/decoder_riscv/alu_op_o_reg[4]' (LDC) to 'i_0/core/core/decoder_riscv/alu_op_o_reg[3]'
+info: optimization accepted worst group hill climbing move (89379.0/oG.CP 244.0ps)
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:13:04 ; elapsed = 00:13:48 . Memory (MB): peak = 1660.605 ; gain = 1081.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                    | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------------------------+-----------+----------------------+--------------+
+|riscv_unit  | core/core/rf_riscv/rf_mem_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+-------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |riscv_unit_GT0 |           1|     34473|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:13:32 ; elapsed = 00:14:16 . Memory (MB): peak = 1660.605 ; gain = 1081.145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:13:54 ; elapsed = 00:14:39 . Memory (MB): peak = 1660.605 ; gain = 1081.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:13:54 ; elapsed = 00:14:39 . Memory (MB): peak = 1660.605 ; gain = 1081.145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:14:05 ; elapsed = 00:14:51 . Memory (MB): peak = 1660.605 ; gain = 1081.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:14:06 ; elapsed = 00:14:51 . Memory (MB): peak = 1660.605 ; gain = 1081.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:14:10 ; elapsed = 00:14:56 . Memory (MB): peak = 1660.605 ; gain = 1081.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:14:11 ; elapsed = 00:14:57 . Memory (MB): peak = 1660.605 ; gain = 1081.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     2|
+|2     |CARRY4      |    35|
+|3     |LUT1        |     5|
+|4     |LUT2        |   111|
+|5     |LUT3        |  3195|
+|6     |LUT4        |  3039|
+|7     |LUT5        |  1306|
+|8     |LUT6        |  4581|
+|9     |MMCME2_BASE |     1|
+|10    |MUXF7       |   970|
+|11    |MUXF8       |   468|
+|12    |RAM32M      |    12|
+|13    |FDCE        |    47|
+|14    |FDRE        |  8463|
+|15    |FDSE        |    23|
+|16    |LD          |    40|
+|17    |LDC         |    20|
+|18    |LDP         |     4|
+|19    |IBUF        |     4|
+|20    |OBUF        |    15|
++------+------------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------+------+
+|      |Instance            |Module        |Cells |
++------+--------------------+--------------+------+
+|1     |top                 |              | 22341|
+|2     |  clkgen            |clkgen        |     1|
+|3     |  core              |riscv_newcore | 10194|
+|4     |    core            |riscv_core    | 10182|
+|5     |      CSR           |CSR_riscv     |   279|
+|6     |      alu_riscv     |alu_riscv     |    25|
+|7     |      decoder_riscv |decoder_riscv |  9649|
+|8     |      lsu           |miriscv_lsu   |    37|
+|9     |      rf_riscv      |rf_riscv      |   146|
+|10    |    intctrl         |intctrl_riscv |    12|
+|11    |  hex_ctrl          |hex_sb_ctrl   |   140|
+|12    |    hex             |hex_digits    |    76|
+|13    |  ps2_ctrl          |ps2_sb_ctrl   |    72|
+|14    |    PS2Receiver     |PS2Receiver   |    62|
+|15    |      debounce      |debouncer     |    31|
+|16    |  ram               |miriscv_ram   | 11913|
++------+--------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:14:11 ; elapsed = 00:14:57 . Memory (MB): peak = 1660.605 ; gain = 1081.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:13:16 ; elapsed = 00:14:33 . Memory (MB): peak = 1660.605 ; gain = 912.895
+Synthesis Optimization Complete : Time (s): cpu = 00:14:12 ; elapsed = 00:14:57 . Memory (MB): peak = 1660.605 ; gain = 1081.145
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1660.605 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1550 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1660.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 77 instances were transformed.
+  LD => LDCE: 40 instances
+  LDC => LDCE: 20 instances
+  LDP => LDPE: 4 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+103 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:14:48 ; elapsed = 00:15:42 . Memory (MB): peak = 1660.605 ; gain = 1359.480
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1660.605 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User/Desktop/lab7/lab7.runs/synth_1/riscv_unit.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1660.605 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file riscv_unit_utilization_synth.rpt -pb riscv_unit_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 27 14:07:18 2023...

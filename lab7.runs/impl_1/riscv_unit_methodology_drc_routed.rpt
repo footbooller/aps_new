@@ -1,0 +1,422 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Dec 27 14:15:15 2023
+| Host         : LAPTOP-J58VKE6E running 64-bit major release  (build 9200)
+| Command      : report_methodology -file riscv_unit_methodology_drc_routed.rpt -pb riscv_unit_methodology_drc_routed.pb -rpx riscv_unit_methodology_drc_routed.rpx
+| Design       : riscv_unit
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 77
++-----------+------------------+------------------------------+------------+
+| Rule      | Severity         | Description                  | Violations |
++-----------+------------------+------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell  | 12         |
+| LUTAR-1   | Warning          | LUT drives async reset alert | 1          |
+| TIMING-20 | Warning          | Non-clocked latch            | 64         |
++-----------+------------------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/cnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/cnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/cnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/cnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/keycodeout_o_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/keycodeout_o_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/keycodeout_o_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/keycodeout_o_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/keycodeout_o_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/keycodeout_o_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/keycodeout_o_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin ps2_ctrl/PS2Receiver/keycodeout_o_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell core/intctrl/csr_o_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) core/core/decoder_riscv/a_sel_o_reg[0]/CLR, core/core/decoder_riscv/a_sel_o_reg[1]/CLR, core/core/decoder_riscv/alu_op_o_reg[0]/CLR, core/core/decoder_riscv/alu_op_o_reg[1]/CLR, core/core/decoder_riscv/alu_op_o_reg[2]/CLR, core/core/decoder_riscv/alu_op_o_reg[3]/CLR, core/core/decoder_riscv/b_sel_o_reg[1]/CLR, core/core/decoder_riscv/b_sel_o_reg[2]/CLR, core/core/decoder_riscv/branch_o_reg/CLR, core/core/decoder_riscv/csr_o_reg/CLR, core/core/decoder_riscv/csr_op_o_reg[0]/CLR, core/core/decoder_riscv/csr_op_o_reg[1]/CLR, core/core/decoder_riscv/gpr_we_o_reg/CLR, core/core/decoder_riscv/int_rst_o_reg/CLR, core/core/decoder_riscv/mem_req_o_reg/CLR (the first 15 of 24 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/a_sel_o_reg[0] cannot be properly analyzed as its control pin core/core/decoder_riscv/a_sel_o_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/a_sel_o_reg[1] cannot be properly analyzed as its control pin core/core/decoder_riscv/a_sel_o_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/alu_op_o_reg[0] cannot be properly analyzed as its control pin core/core/decoder_riscv/alu_op_o_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/alu_op_o_reg[1] cannot be properly analyzed as its control pin core/core/decoder_riscv/alu_op_o_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/alu_op_o_reg[2] cannot be properly analyzed as its control pin core/core/decoder_riscv/alu_op_o_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/alu_op_o_reg[3] cannot be properly analyzed as its control pin core/core/decoder_riscv/alu_op_o_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/b_sel_o_reg[0] cannot be properly analyzed as its control pin core/core/decoder_riscv/b_sel_o_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/b_sel_o_reg[1] cannot be properly analyzed as its control pin core/core/decoder_riscv/b_sel_o_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/b_sel_o_reg[2] cannot be properly analyzed as its control pin core/core/decoder_riscv/b_sel_o_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/branch_o_reg cannot be properly analyzed as its control pin core/core/decoder_riscv/branch_o_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/csr_o_reg cannot be properly analyzed as its control pin core/core/decoder_riscv/csr_o_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/csr_op_o_reg[0] cannot be properly analyzed as its control pin core/core/decoder_riscv/csr_op_o_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/csr_op_o_reg[1] cannot be properly analyzed as its control pin core/core/decoder_riscv/csr_op_o_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/csr_op_o_reg[2] cannot be properly analyzed as its control pin core/core/decoder_riscv/csr_op_o_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/gpr_we_o_reg cannot be properly analyzed as its control pin core/core/decoder_riscv/gpr_we_o_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/int_rst_o_reg cannot be properly analyzed as its control pin core/core/decoder_riscv/int_rst_o_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/jalr_o_reg[0] cannot be properly analyzed as its control pin core/core/decoder_riscv/jalr_o_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/jalr_o_reg[1] cannot be properly analyzed as its control pin core/core/decoder_riscv/jalr_o_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/mem_req_o_reg cannot be properly analyzed as its control pin core/core/decoder_riscv/mem_req_o_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/mem_size_o_reg[0] cannot be properly analyzed as its control pin core/core/decoder_riscv/mem_size_o_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/mem_size_o_reg[1] cannot be properly analyzed as its control pin core/core/decoder_riscv/mem_size_o_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/mem_size_o_reg[2] cannot be properly analyzed as its control pin core/core/decoder_riscv/mem_size_o_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/mem_we_o_reg cannot be properly analyzed as its control pin core/core/decoder_riscv/mem_we_o_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch core/core/decoder_riscv/wb_sel_o_reg cannot be properly analyzed as its control pin core/core/decoder_riscv/wb_sel_o_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch hex_ctrl/read_data_o_reg[0] cannot be properly analyzed as its control pin hex_ctrl/read_data_o_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch hex_ctrl/read_data_o_reg[1] cannot be properly analyzed as its control pin hex_ctrl/read_data_o_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch hex_ctrl/read_data_o_reg[2] cannot be properly analyzed as its control pin hex_ctrl/read_data_o_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch hex_ctrl/read_data_o_reg[3] cannot be properly analyzed as its control pin hex_ctrl/read_data_o_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch hex_ctrl/read_data_o_reg[4] cannot be properly analyzed as its control pin hex_ctrl/read_data_o_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch hex_ctrl/read_data_o_reg[5] cannot be properly analyzed as its control pin hex_ctrl/read_data_o_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch hex_ctrl/read_data_o_reg[6] cannot be properly analyzed as its control pin hex_ctrl/read_data_o_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch hex_ctrl/read_data_o_reg[7] cannot be properly analyzed as its control pin hex_ctrl/read_data_o_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[0] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[10] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[11] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[12] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[13] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[14] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[15] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[16] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[17] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[18] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[19] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[1] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[20] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[21] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[22] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[23] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[24] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[25] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[26] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[27] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[28] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[29] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[2] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[30] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[31] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[3] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[4] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[5] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[6] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[7] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[8] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch ram/data_rdata_o_reg[9] cannot be properly analyzed as its control pin ram/data_rdata_o_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+
